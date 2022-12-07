@@ -99,3 +99,13 @@ module.exports = {
 ```
 import './index.css'
 ```
+
+### Run for production
+```
+npm run build
+```
+
+### Run for development
+```
+npm run dev
+```
