@@ -60,3 +60,42 @@ if (el) {
 </body>
 </html>
 ```
+
+### Install tailwind css
+```
+npm install -D tailwindcss postcss autoprefixer
+```
+
+### Init tailwind config
+```
+npx tailwindcss init -p
+```
+### Update tailwind config
+> tailwind.config.cjs
+```
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: [
+    "./index.html",
+    "./src/**/*.{js,ts,jsx,tsx}",
+  ],
+  theme: {
+    extend: {},
+  },
+  plugins: [],
+}
+```
+
+### Create css
+> src/index.css
+```
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+```
+
+### Import css
+> src/main.jsx
+```
+import './index.css'
+```
